@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="38X-f8-SgI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JoyfulLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6Ie-J5-y96">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aIq-gd-bD4"/>
+                                    <constraint firstAttribute="height" constant="200" id="xCo-NA-enl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l7-ET-LI7">
+                                <rect key="frame" x="20" y="786" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="rrG-tP-1at"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="라이프가드 신청하기"/>
+                                <connections>
+                                    <action selector="clickedSignupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHB-tg-Z7f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Ie-J5-y96" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Fh-Jp-iMn"/>
+                            <constraint firstItem="7l7-ET-LI7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7qd-lF-C9b"/>
+                            <constraint firstItem="6Ie-J5-y96" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GNz-qp-Wul"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7l7-ET-LI7" secondAttribute="trailing" constant="20" id="UIR-lc-x1E"/>
+                            <constraint firstItem="7l7-ET-LI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cHs-02-dIe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7l7-ET-LI7" secondAttribute="bottom" constant="20" id="o0o-zY-Imm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zPI-J8-yKM"/>
+                    <connections>
+                        <outlet property="signupButton" destination="7l7-ET-LI7" id="0SS-uj-7uK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="110"/>
+        </scene>
+        <!--Cert View Controller-->
+        <scene sceneID="wc5-wz-69F">
+            <objects>
+                <viewController storyboardIdentifier="CertViewController" id="3V7-3h-kW5" customClass="CertViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kVc-EC-9LZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5DH-if-64Y">
+                                <rect key="frame" x="107" y="194" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="CvJ-eJ-syh"/>
+                                    <constraint firstAttribute="width" constant="200" id="To8-oS-qVm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R1Z-s5-urT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5DH-if-64Y" firstAttribute="centerX" secondItem="kVc-EC-9LZ" secondAttribute="centerX" id="IeM-Sg-arL"/>
+                            <constraint firstItem="5DH-if-64Y" firstAttribute="top" secondItem="R1Z-s5-urT" secondAttribute="top" constant="150" id="hng-lc-3tA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRt-Sa-WeQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2295.6521739130435" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jel-oL-6nb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="38X-f8-SgI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DiW-Jf-VFe">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ihu-aF-ieQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSp-xb-OKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="110"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="u3j-WO-Vxe">
+            <objects>
+                <viewController id="fg7-vg-uK2" customClass="SignUpViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wz0-l6-1ZU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Apv-C8-kte"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OWD-Ch-YaK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJD-mD-cKN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543" y="110"/>
+        </scene>
+        <!--Join01 View Controller-->
+        <scene sceneID="xNy-Wm-x7g">
+            <objects>
+                <viewController storyboardIdentifier="Join01ViewController" id="fSQ-Hs-vGb" customClass="Join01ViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OSh-u1-rzK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eB-Ns-Nkh">
+                                <rect key="frame" x="20" y="323.5" width="374" height="249"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="우리는 지난 한 주간 구원받은 우리가 어떻게 살아가야 할지 생각해 보았습니다. 그렇다면, 하나님은 우리가 어떻게 살아가기를 원하실까요? 알고 싶다면 버튼을 눌러주세요.  ">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="29" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TF-Fw-ulo">
+                                <rect key="frame" x="20" y="786" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.058823529411764705" green="0.18823529411764706" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="6gP-34-1ZE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="알기 원해요!"/>
+                                <connections>
+                                    <action selector="clickedOkButton:" destination="fSQ-Hs-vGb" eventType="touchUpInside" id="dwi-cZ-Gfm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sbn-q9-piZ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8eB-Ns-Nkh" firstAttribute="centerX" secondItem="OSh-u1-rzK" secondAttribute="centerX" id="8l8-dU-IV0"/>
+                            <constraint firstItem="Sbn-q9-piZ" firstAttribute="bottom" secondItem="3TF-Fw-ulo" secondAttribute="bottom" constant="20" id="Osi-lP-Eya"/>
+                            <constraint firstItem="3TF-Fw-ulo" firstAttribute="leading" secondItem="Sbn-q9-piZ" secondAttribute="leading" constant="20" id="RZj-si-Qjc"/>
+                            <constraint firstItem="Sbn-q9-piZ" firstAttribute="trailing" secondItem="3TF-Fw-ulo" secondAttribute="trailing" constant="20" id="cqJ-tC-ri3"/>
+                            <constraint firstItem="8eB-Ns-Nkh" firstAttribute="centerY" secondItem="OSh-u1-rzK" secondAttribute="centerY" id="ecm-oA-zJo"/>
+                            <constraint firstItem="8eB-Ns-Nkh" firstAttribute="leading" secondItem="Sbn-q9-piZ" secondAttribute="leading" constant="20" id="rCI-C2-geO"/>
+                            <constraint firstItem="Sbn-q9-piZ" firstAttribute="trailing" secondItem="8eB-Ns-Nkh" secondAttribute="trailing" constant="20" id="slz-m3-brM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8nr-jB-F9Y"/>
+                    <connections>
+                        <outlet property="okButton" destination="3TF-Fw-ulo" id="NSh-Ax-XgU"/>
+                        <outlet property="titleLabel" destination="8eB-Ns-Nkh" id="pYy-Nj-RF7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJ6-gF-zC0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="829"/>
+        </scene>
+        <!--Join02 View Controller-->
+        <scene sceneID="XHF-0M-hC7">
+            <objects>
+                <viewController storyboardIdentifier="Join02ViewController" id="LWD-Kv-n3z" customClass="Join02ViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sxs-3m-OpN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4N-Os-rU0">
+                                <rect key="frame" x="20" y="369" width="374" height="158.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="십자가에서 부활하신 예수님께서 승천하시기 전에 마지막으로 제자들에게 지상명령을 주셨습니다. 가장 중요한 명령은 무엇일까요?">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="28" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NY-bL-OSO">
+                                <rect key="frame" x="20" y="786" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="XsH-RB-1iV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="지상대명령">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedOkButton:" destination="LWD-Kv-n3z" eventType="touchUpInside" id="5oV-es-jnp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sI0-xU-92e"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P4N-Os-rU0" firstAttribute="leading" secondItem="sI0-xU-92e" secondAttribute="leading" constant="20" id="0Ef-a4-FiY"/>
+                            <constraint firstItem="sI0-xU-92e" firstAttribute="trailing" secondItem="9NY-bL-OSO" secondAttribute="trailing" constant="20" id="UFU-6i-ZjU"/>
+                            <constraint firstItem="9NY-bL-OSO" firstAttribute="leading" secondItem="sI0-xU-92e" secondAttribute="leading" constant="20" id="YM2-NI-TQa"/>
+                            <constraint firstItem="sI0-xU-92e" firstAttribute="bottom" secondItem="9NY-bL-OSO" secondAttribute="bottom" constant="20" id="cuu-DJ-Enp"/>
+                            <constraint firstItem="P4N-Os-rU0" firstAttribute="centerX" secondItem="Sxs-3m-OpN" secondAttribute="centerX" id="ear-Un-FmZ"/>
+                            <constraint firstItem="P4N-Os-rU0" firstAttribute="centerY" secondItem="Sxs-3m-OpN" secondAttribute="centerY" id="miN-aw-y3b"/>
+                            <constraint firstItem="sI0-xU-92e" firstAttribute="trailing" secondItem="P4N-Os-rU0" secondAttribute="trailing" constant="20" id="oex-V6-twK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jGY-zq-RW5"/>
+                    <connections>
+                        <outlet property="okButton" destination="9NY-bL-OSO" id="oDK-RA-l8O"/>
+                        <outlet property="titleLabel" destination="P4N-Os-rU0" id="PGu-mz-kCZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLJ-PD-7Lp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="828"/>
+        </scene>
+        <!--Join03 View Controller-->
+        <scene sceneID="S1J-Cq-5Lw">
+            <objects>
+                <viewController storyboardIdentifier="Join03ViewController" id="YgD-r4-rih" customClass="Join03ViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="62K-Gw-Sks">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3E-Rc-KHH">
+                                <rect key="frame" x="20" y="259.5" width="374" height="377.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">그러므로 너희는 가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 이름으로 세례를 베풀고, 내가 너희에게 분부한 모든 것을 가르쳐 지키게 하라. 볼지어다, 내가 세상 끝날까지 너희와 항상 함께 있으리라 하시니라.
+(마태복음 28장 19-20절)
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="29" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RO3-6b-k1v">
+                                <rect key="frame" x="20" y="786" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="DGX-z6-Zkk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="아멘!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedOkButton:" destination="YgD-r4-rih" eventType="touchUpInside" id="DaX-rv-HXe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GdC-0B-6Ts"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g3E-Rc-KHH" firstAttribute="centerX" secondItem="62K-Gw-Sks" secondAttribute="centerX" id="8IK-xy-gmi"/>
+                            <constraint firstItem="GdC-0B-6Ts" firstAttribute="trailing" secondItem="g3E-Rc-KHH" secondAttribute="trailing" constant="20" id="A7r-AZ-xWX"/>
+                            <constraint firstItem="GdC-0B-6Ts" firstAttribute="bottom" secondItem="RO3-6b-k1v" secondAttribute="bottom" constant="20" id="ApY-uj-EYY"/>
+                            <constraint firstItem="g3E-Rc-KHH" firstAttribute="centerY" secondItem="62K-Gw-Sks" secondAttribute="centerY" id="GhA-dM-k9A"/>
+                            <constraint firstItem="RO3-6b-k1v" firstAttribute="leading" secondItem="GdC-0B-6Ts" secondAttribute="leading" constant="20" id="Lfa-Qp-0SX"/>
+                            <constraint firstItem="g3E-Rc-KHH" firstAttribute="leading" secondItem="GdC-0B-6Ts" secondAttribute="leading" constant="20" id="qFZ-dj-87a"/>
+                            <constraint firstItem="GdC-0B-6Ts" firstAttribute="trailing" secondItem="RO3-6b-k1v" secondAttribute="trailing" constant="20" id="yi8-Xe-91u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Scg-0X-gBZ"/>
+                    <connections>
+                        <outlet property="okButton" destination="RO3-6b-k1v" id="oYZ-et-NZd"/>
+                        <outlet property="titleLabel" destination="g3E-Rc-KHH" id="MwJ-z2-mAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vZ-Yf-CQw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542" y="828"/>
+        </scene>
+        <!--Join04 View Controller-->
+        <scene sceneID="rPn-u4-N2j">
+            <objects>
+                <viewController storyboardIdentifier="Join04ViewController" id="U0i-rr-hKa" customClass="Join04ViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JXj-JS-AB3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od1-Kw-O6l">
+                                <rect key="frame" x="20" y="281" width="374" height="334.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">모든 민족을 구원하여 제자삼기 원하시는 주님은 우리만 보내지 않으십니다. 세상 끝날까지 우리와 함께 하신다고 말씀하십니다. 나를 살리신 하나님의 구원 받지 못한 영혼을 향한 간절한 마음을 나도 품는 것이 시작입니다. 시작하시겠습니까?</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="29" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spz-ri-nZN">
+                                <rect key="frame" x="20" y="786" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="c1w-yG-ILd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="네!"/>
+                                <connections>
+                                    <action selector="clickedOkButton:" destination="U0i-rr-hKa" eventType="touchUpInside" id="PhS-G7-9C4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="757-5X-JeB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="od1-Kw-O6l" firstAttribute="centerX" secondItem="JXj-JS-AB3" secondAttribute="centerX" id="4FT-g1-9bG"/>
+                            <constraint firstItem="757-5X-JeB" firstAttribute="bottom" secondItem="Spz-ri-nZN" secondAttribute="bottom" constant="20" id="Hyj-a8-Ge1"/>
+                            <constraint firstItem="757-5X-JeB" firstAttribute="trailing" secondItem="Spz-ri-nZN" secondAttribute="trailing" constant="20" id="TeL-lb-QKy"/>
+                            <constraint firstItem="od1-Kw-O6l" firstAttribute="centerY" secondItem="JXj-JS-AB3" secondAttribute="centerY" id="bIl-ub-9xn"/>
+                            <constraint firstItem="od1-Kw-O6l" firstAttribute="leading" secondItem="757-5X-JeB" secondAttribute="leading" constant="20" id="bKt-xR-VSz"/>
+                            <constraint firstItem="757-5X-JeB" firstAttribute="trailing" secondItem="od1-Kw-O6l" secondAttribute="trailing" constant="20" id="l6G-EV-HvU"/>
+                            <constraint firstItem="Spz-ri-nZN" firstAttribute="leading" secondItem="757-5X-JeB" secondAttribute="leading" constant="20" id="u19-P3-OZn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2aJ-3V-oNw"/>
+                    <connections>
+                        <outlet property="okButton" destination="Spz-ri-nZN" id="Bmc-9d-Pc4"/>
+                        <outlet property="titleLabel" destination="od1-Kw-O6l" id="iya-je-fcg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZN-tR-nKo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2296" y="828"/>
+        </scene>
+        <!--Join05 View Controller-->
+        <scene sceneID="BVK-W3-Y39">
+            <objects>
+                <viewController storyboardIdentifier="Join05ViewController" id="l6n-Bs-OOP" customClass="Join05ViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAH-vY-URu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-fx-DpW">
+                                <rect key="frame" x="20" y="388" width="374" height="120.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="당신은 영혼을 살리는 하나님의 라이프가드로 부름 받았습니다. 동의하십니까?">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="29" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPJ-zU-UUz">
+                                <rect key="frame" x="20" y="786" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="eZS-Q6-hj1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="동의합니다"/>
+                                <connections>
+                                    <action selector="clickedOkButton:" destination="l6n-Bs-OOP" eventType="touchUpInside" id="ypW-Vy-VTd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vmR-af-P4g"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OPJ-zU-UUz" firstAttribute="leading" secondItem="vmR-af-P4g" secondAttribute="leading" constant="20" id="D6Z-LQ-Ltl"/>
+                            <constraint firstItem="VfQ-fx-DpW" firstAttribute="centerX" secondItem="IAH-vY-URu" secondAttribute="centerX" id="Up9-4b-T8X"/>
+                            <constraint firstItem="vmR-af-P4g" firstAttribute="bottom" secondItem="OPJ-zU-UUz" secondAttribute="bottom" constant="20" id="Zsh-Q5-UPe"/>
+                            <constraint firstItem="VfQ-fx-DpW" firstAttribute="centerY" secondItem="IAH-vY-URu" secondAttribute="centerY" id="adV-Dc-6Mq"/>
+                            <constraint firstItem="vmR-af-P4g" firstAttribute="trailing" secondItem="OPJ-zU-UUz" secondAttribute="trailing" constant="20" id="enf-v5-94U"/>
+                            <constraint firstItem="vmR-af-P4g" firstAttribute="trailing" secondItem="VfQ-fx-DpW" secondAttribute="trailing" constant="20" id="kQG-lG-PFV"/>
+                            <constraint firstItem="VfQ-fx-DpW" firstAttribute="leading" secondItem="vmR-af-P4g" secondAttribute="leading" constant="20" id="lXP-4A-ASg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AKN-I3-g5g"/>
+                    <connections>
+                        <outlet property="okButton" destination="OPJ-zU-UUz" id="Cit-0h-jvf"/>
+                        <outlet property="titleLabel" destination="VfQ-fx-DpW" id="ei7-DQ-D0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xev-ac-ydT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3046" y="828"/>
+        </scene>
+        <!--Join06 View Controller-->
+        <scene sceneID="VSg-NJ-Pg5">
+            <objects>
+                <viewController storyboardIdentifier="Join06ViewController" id="hxv-P5-TBE" customClass="Join06ViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="37S-RX-KNe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgH-c3-40a">
+                                <rect key="frame" x="20" y="389.5" width="374" height="117"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">하나님의 말씀에 순종하여 라이프가드의 삶을 살아가시겠습니까?
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="28" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJg-X5-JVk">
+                                <rect key="frame" x="20" y="786" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="YYh-Hn-cyW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="네!"/>
+                                <connections>
+                                    <action selector="clickedOkButton:" destination="hxv-P5-TBE" eventType="touchUpInside" id="Dqs-sN-TpW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PEO-Be-t1l"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WgH-c3-40a" firstAttribute="leading" secondItem="PEO-Be-t1l" secondAttribute="leading" constant="20" id="1V0-qD-sD9"/>
+                            <constraint firstItem="WgH-c3-40a" firstAttribute="centerY" secondItem="37S-RX-KNe" secondAttribute="centerY" id="ECM-fb-bSq"/>
+                            <constraint firstItem="PEO-Be-t1l" firstAttribute="bottom" secondItem="gJg-X5-JVk" secondAttribute="bottom" constant="20" id="LxL-Uv-b2R"/>
+                            <constraint firstItem="PEO-Be-t1l" firstAttribute="trailing" secondItem="WgH-c3-40a" secondAttribute="trailing" constant="20" id="lpM-d4-m1T"/>
+                            <constraint firstItem="PEO-Be-t1l" firstAttribute="trailing" secondItem="gJg-X5-JVk" secondAttribute="trailing" constant="20" id="mf9-2i-E2Y"/>
+                            <constraint firstItem="WgH-c3-40a" firstAttribute="centerX" secondItem="37S-RX-KNe" secondAttribute="centerX" id="nGa-Kr-2fV"/>
+                            <constraint firstItem="gJg-X5-JVk" firstAttribute="leading" secondItem="PEO-Be-t1l" secondAttribute="leading" constant="20" id="xcq-cQ-1d2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UB5-np-1w9"/>
+                    <connections>
+                        <outlet property="okButton" destination="gJg-X5-JVk" id="f3h-qw-hIr"/>
+                        <outlet property="titleLabel" destination="WgH-c3-40a" id="g7m-a9-cSJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVk-tN-EOz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3784" y="828"/>
+        </scene>
+        <!--Join07 View Controller-->
+        <scene sceneID="Ila-v5-SsH">
+            <objects>
+                <viewController storyboardIdentifier="Join07ViewController" id="y27-Lk-9mn" customClass="Join07ViewController" customModule="JoyfulLifeGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJf-9y-4iU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQD-fc-l33">
+                                <rect key="frame" x="20" y="345" width="374" height="206.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="축하합니다! 하나님 나라의 라이프가드 자격증이 발급되었습니다. 이제 마음껏 복음을 전하세요! 성령 충만을 구하세요! 주님이 성령 충만으로 우리와 함께 하십니다!">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="29" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvG-Vu-N2R">
+                                <rect key="frame" x="20" y="786" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="tGP-7j-OHN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="자격증 확인하기"/>
+                                <connections>
+                                    <action selector="clickedOkButton:" destination="y27-Lk-9mn" eventType="touchUpInside" id="0hQ-Ef-xJF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T2C-MT-JKb"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uQD-fc-l33" firstAttribute="centerX" secondItem="jJf-9y-4iU" secondAttribute="centerX" id="1eD-ex-Nn0"/>
+                            <constraint firstItem="JvG-Vu-N2R" firstAttribute="leading" secondItem="T2C-MT-JKb" secondAttribute="leading" constant="20" id="2SY-jD-sQF"/>
+                            <constraint firstItem="T2C-MT-JKb" firstAttribute="bottom" secondItem="JvG-Vu-N2R" secondAttribute="bottom" constant="20" id="4ew-F2-csz"/>
+                            <constraint firstItem="uQD-fc-l33" firstAttribute="centerY" secondItem="jJf-9y-4iU" secondAttribute="centerY" id="Ufr-AD-e0G"/>
+                            <constraint firstItem="uQD-fc-l33" firstAttribute="leading" secondItem="T2C-MT-JKb" secondAttribute="leading" constant="20" id="Xc3-FR-cup"/>
+                            <constraint firstItem="T2C-MT-JKb" firstAttribute="trailing" secondItem="JvG-Vu-N2R" secondAttribute="trailing" constant="20" id="a58-d0-KEd"/>
+                            <constraint firstItem="T2C-MT-JKb" firstAttribute="trailing" secondItem="uQD-fc-l33" secondAttribute="trailing" constant="20" id="zlN-Im-5Re"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="drz-gh-RGe"/>
+                    <connections>
+                        <outlet property="okButton" destination="JvG-Vu-N2R" id="RtX-lL-rvY"/>
+                        <outlet property="titleLabel" destination="uQD-fc-l33" id="FA9-xW-sea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npN-6J-LhD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4561" y="828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JoyfulLogo" width="1024" height="1024"/>
+    </resources>
+</document>

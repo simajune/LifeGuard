@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		274D2EBBD894B4241576AF0A /* Pods_JoyfulLifeGuard_JoyfulLifeGuardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D83B1A7EDCC1AFC02FAC553 /* Pods_JoyfulLifeGuard_JoyfulLifeGuardUITests.framework */; };
+		4B7C167FA0870CCED977905B /* Pods_JoyfulLifeGuardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1740BBB0B42D2A27E8AB41 /* Pods_JoyfulLifeGuardTests.framework */; };
+		83D9617B5C426AF7E0DCF296 /* Pods_JoyfulLifeGuard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2793209180EF29C03568682 /* Pods_JoyfulLifeGuard.framework */; };
+		DD0C1DC92719CC090088725A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0C1DC82719CC090088725A /* GoogleService-Info.plist */; };
+		DD0C1DCC271A86090088725A /* FrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C1DCB271A86090088725A /* FrontView.swift */; };
+		DD0C1DCE271A86140088725A /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C1DCD271A86140088725A /* BackView.swift */; };
+		DD6402CF271AC2370045670F /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6402CE271AC2370045670F /* UILabel+Extension.swift */; };
+		DDB88E442715D0BB006B9A96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E432715D0BB006B9A96 /* AppDelegate.swift */; };
+		DDB88E462715D0BB006B9A96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E452715D0BB006B9A96 /* SceneDelegate.swift */; };
+		DDB88E4B2715D0BB006B9A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB88E492715D0BB006B9A96 /* Main.storyboard */; };
+		DDB88E4D2715D0C7006B9A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB88E4C2715D0C7006B9A96 /* Assets.xcassets */; };
+		DDB88E502715D0C7006B9A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB88E4E2715D0C7006B9A96 /* LaunchScreen.storyboard */; };
+		DDB88E5B2715D0C8006B9A96 /* JoyfulLifeGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E5A2715D0C8006B9A96 /* JoyfulLifeGuardTests.swift */; };
+		DDB88E652715D0C8006B9A96 /* JoyfulLifeGuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E642715D0C8006B9A96 /* JoyfulLifeGuardUITests.swift */; };
+		DDB88E672715D0C8006B9A96 /* JoyfulLifeGuardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E662715D0C8006B9A96 /* JoyfulLifeGuardUITestsLaunchTests.swift */; };
+		DDB88E762715DF3A006B9A96 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E752715DF3A006B9A96 /* SignUpViewController.swift */; };
+		DDB88E7B2715DFA6006B9A96 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E7A2715DFA6006B9A96 /* SignUpViewModel.swift */; };
+		DDB88E7D2715EE6A006B9A96 /* CertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E7C2715EE6A006B9A96 /* CertViewController.swift */; };
+		DDB88E7F2715EE78006B9A96 /* CertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E7E2715EE78006B9A96 /* CertViewModel.swift */; };
+		DDBCF93F27171A2100A94469 /* Join01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF93E27171A2100A94469 /* Join01ViewController.swift */; };
+		DDBCF94127171A3400A94469 /* Join02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94027171A3400A94469 /* Join02ViewController.swift */; };
+		DDBCF94327171A4300A94469 /* Join03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94227171A4300A94469 /* Join03ViewController.swift */; };
+		DDBCF94527171A4E00A94469 /* Join04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94427171A4E00A94469 /* Join04ViewController.swift */; };
+		DDBCF94727171A5B00A94469 /* Join05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94627171A5B00A94469 /* Join05ViewController.swift */; };
+		DDBCF94927171A6900A94469 /* Join06ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94827171A6900A94469 /* Join06ViewController.swift */; };
+		DDBCF94B27171AAF00A94469 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94A27171AAF00A94469 /* LoginViewController.swift */; };
+		DDBCF94D27171ED500A94469 /* Join07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94C27171ED500A94469 /* Join07ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDB88E572715D0C8006B9A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDB88E382715D0BB006B9A96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB88E3F2715D0BB006B9A96;
+			remoteInfo = JoyfulLifeGuard;
+		};
+		DDB88E612715D0C8006B9A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDB88E382715D0BB006B9A96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB88E3F2715D0BB006B9A96;
+			remoteInfo = JoyfulLifeGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09F70E54C4760A4ECA312DE3 /* Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.debug.xcconfig"; path = "Target Support Files/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A1740BBB0B42D2A27E8AB41 /* Pods_JoyfulLifeGuardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoyfulLifeGuardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D82933B997822FBF9820A53 /* Pods-JoyfulLifeGuardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyfulLifeGuardTests.release.xcconfig"; path = "Target Support Files/Pods-JoyfulLifeGuardTests/Pods-JoyfulLifeGuardTests.release.xcconfig"; sourceTree = "<group>"; };
+		4BC87FD6510DBC1877497C88 /* Pods-JoyfulLifeGuard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyfulLifeGuard.debug.xcconfig"; path = "Target Support Files/Pods-JoyfulLifeGuard/Pods-JoyfulLifeGuard.debug.xcconfig"; sourceTree = "<group>"; };
+		6641F9FFDC8423549C232BA6 /* Pods-JoyfulLifeGuardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyfulLifeGuardTests.debug.xcconfig"; path = "Target Support Files/Pods-JoyfulLifeGuardTests/Pods-JoyfulLifeGuardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D83B1A7EDCC1AFC02FAC553 /* Pods_JoyfulLifeGuard_JoyfulLifeGuardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoyfulLifeGuard_JoyfulLifeGuardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		863BF7CDF3994804A3E65C9D /* Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.release.xcconfig"; path = "Target Support Files/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86A793692676026B46630907 /* Pods-JoyfulLifeGuard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyfulLifeGuard.release.xcconfig"; path = "Target Support Files/Pods-JoyfulLifeGuard/Pods-JoyfulLifeGuard.release.xcconfig"; sourceTree = "<group>"; };
+		D2793209180EF29C03568682 /* Pods_JoyfulLifeGuard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoyfulLifeGuard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0C1DC82719CC090088725A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD0C1DCB271A86090088725A /* FrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontView.swift; sourceTree = "<group>"; };
+		DD0C1DCD271A86140088725A /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		DD6402CE271AC2370045670F /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		DDB88E402715D0BB006B9A96 /* JoyfulLifeGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyfulLifeGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB88E432715D0BB006B9A96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDB88E452715D0BB006B9A96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DDB88E4A2715D0BB006B9A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDB88E4C2715D0C7006B9A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDB88E4F2715D0C7006B9A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDB88E512715D0C7006B9A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB88E562715D0C8006B9A96 /* JoyfulLifeGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoyfulLifeGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB88E5A2715D0C8006B9A96 /* JoyfulLifeGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulLifeGuardTests.swift; sourceTree = "<group>"; };
+		DDB88E602715D0C8006B9A96 /* JoyfulLifeGuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoyfulLifeGuardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB88E642715D0C8006B9A96 /* JoyfulLifeGuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulLifeGuardUITests.swift; sourceTree = "<group>"; };
+		DDB88E662715D0C8006B9A96 /* JoyfulLifeGuardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulLifeGuardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDB88E752715DF3A006B9A96 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DDB88E7A2715DFA6006B9A96 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		DDB88E7C2715EE6A006B9A96 /* CertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertViewController.swift; sourceTree = "<group>"; };
+		DDB88E7E2715EE78006B9A96 /* CertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertViewModel.swift; sourceTree = "<group>"; };
+		DDBCF93E27171A2100A94469 /* Join01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join01ViewController.swift; sourceTree = "<group>"; };
+		DDBCF94027171A3400A94469 /* Join02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join02ViewController.swift; sourceTree = "<group>"; };
+		DDBCF94227171A4300A94469 /* Join03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join03ViewController.swift; sourceTree = "<group>"; };
+		DDBCF94427171A4E00A94469 /* Join04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join04ViewController.swift; sourceTree = "<group>"; };
+		DDBCF94627171A5B00A94469 /* Join05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join05ViewController.swift; sourceTree = "<group>"; };
+		DDBCF94827171A6900A94469 /* Join06ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join06ViewController.swift; sourceTree = "<group>"; };
+		DDBCF94A27171AAF00A94469 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DDBCF94C27171ED500A94469 /* Join07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join07ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDB88E3D2715D0BB006B9A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D9617B5C426AF7E0DCF296 /* Pods_JoyfulLifeGuard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB88E532715D0C8006B9A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7C167FA0870CCED977905B /* Pods_JoyfulLifeGuardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB88E5D2715D0C8006B9A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274D2EBBD894B4241576AF0A /* Pods_JoyfulLifeGuard_JoyfulLifeGuardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0A0209A84BDFDF67ACA862 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2793209180EF29C03568682 /* Pods_JoyfulLifeGuard.framework */,
+				6D83B1A7EDCC1AFC02FAC553 /* Pods_JoyfulLifeGuard_JoyfulLifeGuardUITests.framework */,
+				3A1740BBB0B42D2A27E8AB41 /* Pods_JoyfulLifeGuardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60D1FD677C03D6265C65835F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BC87FD6510DBC1877497C88 /* Pods-JoyfulLifeGuard.debug.xcconfig */,
+				86A793692676026B46630907 /* Pods-JoyfulLifeGuard.release.xcconfig */,
+				09F70E54C4760A4ECA312DE3 /* Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.debug.xcconfig */,
+				863BF7CDF3994804A3E65C9D /* Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.release.xcconfig */,
+				6641F9FFDC8423549C232BA6 /* Pods-JoyfulLifeGuardTests.debug.xcconfig */,
+				3D82933B997822FBF9820A53 /* Pods-JoyfulLifeGuardTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD0C1DCA271A85FD0088725A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD0C1DCB271A86090088725A /* FrontView.swift */,
+				DD0C1DCD271A86140088725A /* BackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDB88E372715D0BB006B9A96 = {
+			isa = PBXGroup;
+			children = (
+				DDB88E422715D0BB006B9A96 /* JoyfulLifeGuard */,
+				DDB88E592715D0C8006B9A96 /* JoyfulLifeGuardTests */,
+				DDB88E632715D0C8006B9A96 /* JoyfulLifeGuardUITests */,
+				DDB88E412715D0BB006B9A96 /* Products */,
+				60D1FD677C03D6265C65835F /* Pods */,
+				3B0A0209A84BDFDF67ACA862 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDB88E412715D0BB006B9A96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDB88E402715D0BB006B9A96 /* JoyfulLifeGuard.app */,
+				DDB88E562715D0C8006B9A96 /* JoyfulLifeGuardTests.xctest */,
+				DDB88E602715D0C8006B9A96 /* JoyfulLifeGuardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDB88E422715D0BB006B9A96 /* JoyfulLifeGuard */ = {
+			isa = PBXGroup;
+			children = (
+				DDB88E432715D0BB006B9A96 /* AppDelegate.swift */,
+				DDB88E452715D0BB006B9A96 /* SceneDelegate.swift */,
+				DDB88E742715DA1A006B9A96 /* Storyboard */,
+				DDB88E772715DF51006B9A96 /* SignUp */,
+				DDB88E782715DF6C006B9A96 /* Cert */,
+				DDB88E4C2715D0C7006B9A96 /* Assets.xcassets */,
+				DDB88E512715D0C7006B9A96 /* Info.plist */,
+				DD0C1DC82719CC090088725A /* GoogleService-Info.plist */,
+				DD6402CE271AC2370045670F /* UILabel+Extension.swift */,
+			);
+			path = JoyfulLifeGuard;
+			sourceTree = "<group>";
+		};
+		DDB88E592715D0C8006B9A96 /* JoyfulLifeGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDB88E5A2715D0C8006B9A96 /* JoyfulLifeGuardTests.swift */,
+			);
+			path = JoyfulLifeGuardTests;
+			sourceTree = "<group>";
+		};
+		DDB88E632715D0C8006B9A96 /* JoyfulLifeGuardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDB88E642715D0C8006B9A96 /* JoyfulLifeGuardUITests.swift */,
+				DDB88E662715D0C8006B9A96 /* JoyfulLifeGuardUITestsLaunchTests.swift */,
+			);
+			path = JoyfulLifeGuardUITests;
+			sourceTree = "<group>";
+		};
+		DDB88E742715DA1A006B9A96 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DDB88E492715D0BB006B9A96 /* Main.storyboard */,
+				DDB88E4E2715D0C7006B9A96 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DDB88E772715DF51006B9A96 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DDBCF94A27171AAF00A94469 /* LoginViewController.swift */,
+				DDB88E752715DF3A006B9A96 /* SignUpViewController.swift */,
+				DDB88E7A2715DFA6006B9A96 /* SignUpViewModel.swift */,
+				DDBCF93E27171A2100A94469 /* Join01ViewController.swift */,
+				DDBCF94027171A3400A94469 /* Join02ViewController.swift */,
+				DDBCF94227171A4300A94469 /* Join03ViewController.swift */,
+				DDBCF94427171A4E00A94469 /* Join04ViewController.swift */,
+				DDBCF94627171A5B00A94469 /* Join05ViewController.swift */,
+				DDBCF94827171A6900A94469 /* Join06ViewController.swift */,
+				DDBCF94C27171ED500A94469 /* Join07ViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		DDB88E782715DF6C006B9A96 /* Cert */ = {
+			isa = PBXGroup;
+			children = (
+				DD0C1DCA271A85FD0088725A /* View */,
+				DDB88E7C2715EE6A006B9A96 /* CertViewController.swift */,
+				DDB88E7E2715EE78006B9A96 /* CertViewModel.swift */,
+			);
+			path = Cert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDB88E3F2715D0BB006B9A96 /* JoyfulLifeGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB88E6A2715D0C8006B9A96 /* Build configuration list for PBXNativeTarget "JoyfulLifeGuard" */;
+			buildPhases = (
+				540E9FD28C85276EB6EEC10B /* [CP] Check Pods Manifest.lock */,
+				DDB88E3C2715D0BB006B9A96 /* Sources */,
+				DDB88E3D2715D0BB006B9A96 /* Frameworks */,
+				DDB88E3E2715D0BB006B9A96 /* Resources */,
+				789825D3DA83FEBA7DF13F94 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JoyfulLifeGuard;
+			productName = JoyfulLifeGuard;
+			productReference = DDB88E402715D0BB006B9A96 /* JoyfulLifeGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDB88E552715D0C8006B9A96 /* JoyfulLifeGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB88E6D2715D0C8006B9A96 /* Build configuration list for PBXNativeTarget "JoyfulLifeGuardTests" */;
+			buildPhases = (
+				EE3DFC1A135010A3D1E5D2DA /* [CP] Check Pods Manifest.lock */,
+				DDB88E522715D0C8006B9A96 /* Sources */,
+				DDB88E532715D0C8006B9A96 /* Frameworks */,
+				DDB88E542715D0C8006B9A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDB88E582715D0C8006B9A96 /* PBXTargetDependency */,
+			);
+			name = JoyfulLifeGuardTests;
+			productName = JoyfulLifeGuardTests;
+			productReference = DDB88E562715D0C8006B9A96 /* JoyfulLifeGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDB88E5F2715D0C8006B9A96 /* JoyfulLifeGuardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB88E702715D0C8006B9A96 /* Build configuration list for PBXNativeTarget "JoyfulLifeGuardUITests" */;
+			buildPhases = (
+				A0FBF3078D4B3417654B1D00 /* [CP] Check Pods Manifest.lock */,
+				DDB88E5C2715D0C8006B9A96 /* Sources */,
+				DDB88E5D2715D0C8006B9A96 /* Frameworks */,
+				DDB88E5E2715D0C8006B9A96 /* Resources */,
+				F681FE8206D744C313D1E4CA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDB88E622715D0C8006B9A96 /* PBXTargetDependency */,
+			);
+			name = JoyfulLifeGuardUITests;
+			productName = JoyfulLifeGuardUITests;
+			productReference = DDB88E602715D0C8006B9A96 /* JoyfulLifeGuardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDB88E382715D0BB006B9A96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					DDB88E3F2715D0BB006B9A96 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					DDB88E552715D0C8006B9A96 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DDB88E3F2715D0BB006B9A96;
+					};
+					DDB88E5F2715D0C8006B9A96 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DDB88E3F2715D0BB006B9A96;
+					};
+				};
+			};
+			buildConfigurationList = DDB88E3B2715D0BB006B9A96 /* Build configuration list for PBXProject "JoyfulLifeGuard" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDB88E372715D0BB006B9A96;
+			productRefGroup = DDB88E412715D0BB006B9A96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDB88E3F2715D0BB006B9A96 /* JoyfulLifeGuard */,
+				DDB88E552715D0C8006B9A96 /* JoyfulLifeGuardTests */,
+				DDB88E5F2715D0C8006B9A96 /* JoyfulLifeGuardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDB88E3E2715D0BB006B9A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB88E502715D0C7006B9A96 /* LaunchScreen.storyboard in Resources */,
+				DD0C1DC92719CC090088725A /* GoogleService-Info.plist in Resources */,
+				DDB88E4D2715D0C7006B9A96 /* Assets.xcassets in Resources */,
+				DDB88E4B2715D0BB006B9A96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB88E542715D0C8006B9A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB88E5E2715D0C8006B9A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		540E9FD28C85276EB6EEC10B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoyfulLifeGuard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		789825D3DA83FEBA7DF13F94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoyfulLifeGuard/Pods-JoyfulLifeGuard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoyfulLifeGuard/Pods-JoyfulLifeGuard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JoyfulLifeGuard/Pods-JoyfulLifeGuard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0FBF3078D4B3417654B1D00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3DFC1A135010A3D1E5D2DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoyfulLifeGuardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F681FE8206D744C313D1E4CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests/Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDB88E3C2715D0BB006B9A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBCF94B27171AAF00A94469 /* LoginViewController.swift in Sources */,
+				DDB88E7D2715EE6A006B9A96 /* CertViewController.swift in Sources */,
+				DDBCF94927171A6900A94469 /* Join06ViewController.swift in Sources */,
+				DDB88E442715D0BB006B9A96 /* AppDelegate.swift in Sources */,
+				DDBCF94527171A4E00A94469 /* Join04ViewController.swift in Sources */,
+				DDBCF94327171A4300A94469 /* Join03ViewController.swift in Sources */,
+				DDBCF94D27171ED500A94469 /* Join07ViewController.swift in Sources */,
+				DD6402CF271AC2370045670F /* UILabel+Extension.swift in Sources */,
+				DDB88E7B2715DFA6006B9A96 /* SignUpViewModel.swift in Sources */,
+				DD0C1DCE271A86140088725A /* BackView.swift in Sources */,
+				DDB88E762715DF3A006B9A96 /* SignUpViewController.swift in Sources */,
+				DDBCF93F27171A2100A94469 /* Join01ViewController.swift in Sources */,
+				DDB88E462715D0BB006B9A96 /* SceneDelegate.swift in Sources */,
+				DDBCF94727171A5B00A94469 /* Join05ViewController.swift in Sources */,
+				DDBCF94127171A3400A94469 /* Join02ViewController.swift in Sources */,
+				DD0C1DCC271A86090088725A /* FrontView.swift in Sources */,
+				DDB88E7F2715EE78006B9A96 /* CertViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB88E522715D0C8006B9A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB88E5B2715D0C8006B9A96 /* JoyfulLifeGuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB88E5C2715D0C8006B9A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB88E652715D0C8006B9A96 /* JoyfulLifeGuardUITests.swift in Sources */,
+				DDB88E672715D0C8006B9A96 /* JoyfulLifeGuardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDB88E582715D0C8006B9A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB88E3F2715D0BB006B9A96 /* JoyfulLifeGuard */;
+			targetProxy = DDB88E572715D0C8006B9A96 /* PBXContainerItemProxy */;
+		};
+		DDB88E622715D0C8006B9A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB88E3F2715D0BB006B9A96 /* JoyfulLifeGuard */;
+			targetProxy = DDB88E612715D0C8006B9A96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDB88E492715D0BB006B9A96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDB88E4A2715D0BB006B9A96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDB88E4E2715D0C7006B9A96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDB88E4F2715D0C7006B9A96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDB88E682715D0C8006B9A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDB88E692715D0C8006B9A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDB88E6B2715D0C8006B9A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC87FD6510DBC1877497C88 /* Pods-JoyfulLifeGuard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UGB7ZX43H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JoyfulLifeGuard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "라이프가드";
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용을 허용해주세용~!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "사진 앨범 가져오게 허용해주세용~!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = joyful.lifeguard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DDB88E6C2715D0C8006B9A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A793692676026B46630907 /* Pods-JoyfulLifeGuard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UGB7ZX43H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JoyfulLifeGuard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "라이프가드";
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용을 허용해주세용~!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "사진 앨범 가져오게 허용해주세용~!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = joyful.lifeguard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DDB88E6E2715D0C8006B9A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6641F9FFDC8423549C232BA6 /* Pods-JoyfulLifeGuardTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7423G4C8P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Joyful.JoyfulLifeGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JoyfulLifeGuard.app/JoyfulLifeGuard";
+			};
+			name = Debug;
+		};
+		DDB88E6F2715D0C8006B9A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D82933B997822FBF9820A53 /* Pods-JoyfulLifeGuardTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7423G4C8P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Joyful.JoyfulLifeGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JoyfulLifeGuard.app/JoyfulLifeGuard";
+			};
+			name = Release;
+		};
+		DDB88E712715D0C8006B9A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F70E54C4760A4ECA312DE3 /* Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7423G4C8P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Joyful.JoyfulLifeGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JoyfulLifeGuard;
+			};
+			name = Debug;
+		};
+		DDB88E722715D0C8006B9A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 863BF7CDF3994804A3E65C9D /* Pods-JoyfulLifeGuard-JoyfulLifeGuardUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7423G4C8P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Joyful.JoyfulLifeGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JoyfulLifeGuard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDB88E3B2715D0BB006B9A96 /* Build configuration list for PBXProject "JoyfulLifeGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB88E682715D0C8006B9A96 /* Debug */,
+				DDB88E692715D0C8006B9A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDB88E6A2715D0C8006B9A96 /* Build configuration list for PBXNativeTarget "JoyfulLifeGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB88E6B2715D0C8006B9A96 /* Debug */,
+				DDB88E6C2715D0C8006B9A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDB88E6D2715D0C8006B9A96 /* Build configuration list for PBXNativeTarget "JoyfulLifeGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB88E6E2715D0C8006B9A96 /* Debug */,
+				DDB88E6F2715D0C8006B9A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDB88E702715D0C8006B9A96 /* Build configuration list for PBXNativeTarget "JoyfulLifeGuardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB88E712715D0C8006B9A96 /* Debug */,
+				DDB88E722715D0C8006B9A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDB88E382715D0BB006B9A96 /* Project object */;
+}
