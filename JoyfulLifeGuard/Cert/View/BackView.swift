@@ -10,7 +10,7 @@ class BackView: UIView {
     // MARK: - UI Components
     private lazy var backgroundImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "Back")
+        imageView.image = UIImage(named: "certBack")
         self.addSubview(imageView)
         return imageView
     }()
@@ -48,6 +48,8 @@ extension BackView {
     }
     
     private func setProperties() {
+        self.backgroundColor = .clear
+        
         self.layer.masksToBounds = false
         self.layer.cornerRadius = 10
         self.layer.shadowColor = UIColor.black.cgColor

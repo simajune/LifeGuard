@@ -19,21 +19,19 @@ final class CertViewController: UIViewController {
         self.view.addSubview(backView)
         return backView
     }()
-
+    private var user: UserModel?
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         layout()
-//        perform(#selector(flip), with: nil, afterDelay: 2)
-
+        setFrontView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    
     
     @objc func flip() {
         let transitionOptions: UIView.AnimationOptions = .transitionFlipFromLeft
@@ -49,7 +47,6 @@ final class CertViewController: UIViewController {
                 self.backView.isHidden = false
             })
         } else {
-
             UIView.transition(with: backView, duration: 0.5, options: transitionOptions, animations: nil) { isFinished in
                 if isFinished {
                     self.frontView.isHidden = false
@@ -71,14 +68,20 @@ extension CertViewController {
             $0.centerX.centerY.equalToSuperview()
             $0.width.equalTo(300.0)
             $0.height.equalTo(525.0)
-//            $0.edges.equalToSuperview()
         }
         
         self.backView.snp.makeConstraints {
             $0.centerX.centerY.equalToSuperview()
             $0.width.equalTo(300.0)
             $0.height.equalTo(525.0)
-//            $0.edges.equalToSuperview()
+        }
+    }
+    
+    private func setFrontView() {
+        let userDefault = UserDefaults.standard
+        do {
+            guard let user = try? userDefault.getObject(forKey: "user", castTo: UserModel.self) else { return }
+            self.frontView.configure(user: user)
         }
     }
 }

@@ -17,8 +17,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func clickedSignupButton(_ sender: UIButton) {
         let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
-        guard let join01VC = mainStoryboard.instantiateViewController(withIdentifier: "Join01ViewController") as? Join01ViewController else { return }
-        self.navigationController?.pushViewController(join01VC, animated: true)
+        guard let signUpVC = mainStoryboard.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController else { return }
+        self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
 }

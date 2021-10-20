@@ -11,14 +11,13 @@ class FrontView: UIView {
     // MARK: - UI Components
     private lazy var backgroundImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "Front")
+        imageView.image = UIImage(named: "certFront")
         self.addSubview(imageView)
         return imageView
     }()
     
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "SampleProfile")
         imageView.contentMode = .scaleAspectFill
         self.addSubview(imageView)
         return imageView
@@ -26,27 +25,24 @@ class FrontView: UIView {
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 13.0, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
         label.textColor = .white
-        label.text = "정태준"
         self.addSubview(label)
         return label
     }()
     
     private lazy var birthLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 13.0, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
         label.textColor = .white
-        label.text = "1987.05.07"
         self.addSubview(label)
         return label
     }()
     
     private lazy var validateDate: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 13.0, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
         label.textColor = .white
-        label.text = "2021.10.24 ~ FOREVER"
         self.addSubview(label)
         return label
     }()
@@ -55,7 +51,6 @@ class FrontView: UIView {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13.0, weight: .regular)
         label.textColor = .black
-        label.text = "2021.10.24"
         self.addSubview(label)
         return label
     }()
@@ -97,22 +92,22 @@ extension FrontView {
         }
         
         self.nameLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(268.5)
-            $0.leading.equalToSuperview().offset(105)
+            $0.top.equalToSuperview().offset(267)
+            $0.leading.equalToSuperview().offset(120)
         }
         
         self.birthLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(299.5)
-            $0.leading.equalToSuperview().offset(105)
+            $0.top.equalToSuperview().offset(298)
+            $0.leading.equalToSuperview().offset(120)
         }
         
         self.validateDate.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(330.5)
-            $0.leading.equalToSuperview().offset(105)
+            $0.top.equalToSuperview().offset(330)
+            $0.leading.equalToSuperview().offset(120)
         }
         
         self.regiserDateLabel.snp.makeConstraints {
-            $0.bottom.equalToSuperview().offset(-50)
+            $0.bottom.equalToSuperview().offset(-40)
             $0.centerX.equalToSuperview()
         }
         
@@ -122,8 +117,10 @@ extension FrontView {
     }
     
     private func setProperties() {
+        self.backgroundColor = .clear
+        
         self.layer.masksToBounds = false
-        self.layer.cornerRadius = 10        
+        self.layer.cornerRadius = 10
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowRadius = 4
         self.layer.shadowOffset = CGSize(width: 5, height: 5.0)
@@ -134,8 +131,13 @@ extension FrontView {
         self.flipButton.addTarget(self, action: #selector(flipButtonClicked(_:)), for: .touchUpInside)
     }
     
-    public func configure() {
-        
+    public func configure(user: UserModel?) {
+        guard let user = user else { return }
+        self.profileImageView.image = UIImage(data: user.profile)
+        self.nameLabel.text = user.name
+        self.birthLabel.text = user.birthDay
+        self.validateDate.text = "FOREVER"
+        self.regiserDateLabel.text = user.regiserDay
     }
     
     @objc func flipButtonClicked(_ sender: UIButton) {

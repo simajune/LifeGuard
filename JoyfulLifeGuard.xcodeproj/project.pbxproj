@@ -13,6 +13,14 @@
 		DD0C1DC92719CC090088725A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0C1DC82719CC090088725A /* GoogleService-Info.plist */; };
 		DD0C1DCC271A86090088725A /* FrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C1DCB271A86090088725A /* FrontView.swift */; };
 		DD0C1DCE271A86140088725A /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C1DCD271A86140088725A /* BackView.swift */; };
+		DD2999C0271EAF3900B3B1D7 /* Join07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2999BF271EAF3900B3B1D7 /* Join07ViewController.swift */; };
+		DD2999C3271EB10400B3B1D7 /* YearToDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2999C2271EB10400B3B1D7 /* YearToDatePickerView.swift */; };
+		DD2999C6271EBB1000B3B1D7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2999C5271EBB1000B3B1D7 /* UIColor+Extension.swift */; };
+		DD2999C8271EBD5D00B3B1D7 /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2999C7271EBD5D00B3B1D7 /* Reactive+Extension.swift */; };
+		DD2999CA271EC04100B3B1D7 /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2999C9271EC04100B3B1D7 /* Observable+Extension.swift */; };
+		DD2999CD271ECC4500B3B1D7 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2999CC271ECC4500B3B1D7 /* UIButton+Extension.swift */; };
+		DD2999D1271EDE5B00B3B1D7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2999D0271EDE5B00B3B1D7 /* UserModel.swift */; };
+		DD2999D3271F056D00B3B1D7 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2999D2271F056D00B3B1D7 /* UserDefaults+Extension.swift */; };
 		DD6402CF271AC2370045670F /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6402CE271AC2370045670F /* UILabel+Extension.swift */; };
 		DDB88E442715D0BB006B9A96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E432715D0BB006B9A96 /* AppDelegate.swift */; };
 		DDB88E462715D0BB006B9A96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E452715D0BB006B9A96 /* SceneDelegate.swift */; };
@@ -23,9 +31,7 @@
 		DDB88E652715D0C8006B9A96 /* JoyfulLifeGuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E642715D0C8006B9A96 /* JoyfulLifeGuardUITests.swift */; };
 		DDB88E672715D0C8006B9A96 /* JoyfulLifeGuardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E662715D0C8006B9A96 /* JoyfulLifeGuardUITestsLaunchTests.swift */; };
 		DDB88E762715DF3A006B9A96 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E752715DF3A006B9A96 /* SignUpViewController.swift */; };
-		DDB88E7B2715DFA6006B9A96 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E7A2715DFA6006B9A96 /* SignUpViewModel.swift */; };
 		DDB88E7D2715EE6A006B9A96 /* CertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E7C2715EE6A006B9A96 /* CertViewController.swift */; };
-		DDB88E7F2715EE78006B9A96 /* CertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB88E7E2715EE78006B9A96 /* CertViewModel.swift */; };
 		DDBCF93F27171A2100A94469 /* Join01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF93E27171A2100A94469 /* Join01ViewController.swift */; };
 		DDBCF94127171A3400A94469 /* Join02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94027171A3400A94469 /* Join02ViewController.swift */; };
 		DDBCF94327171A4300A94469 /* Join03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94227171A4300A94469 /* Join03ViewController.swift */; };
@@ -33,7 +39,6 @@
 		DDBCF94727171A5B00A94469 /* Join05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94627171A5B00A94469 /* Join05ViewController.swift */; };
 		DDBCF94927171A6900A94469 /* Join06ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94827171A6900A94469 /* Join06ViewController.swift */; };
 		DDBCF94B27171AAF00A94469 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94A27171AAF00A94469 /* LoginViewController.swift */; };
-		DDBCF94D27171ED500A94469 /* Join07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCF94C27171ED500A94469 /* Join07ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,14 @@
 		DD0C1DC82719CC090088725A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD0C1DCB271A86090088725A /* FrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontView.swift; sourceTree = "<group>"; };
 		DD0C1DCD271A86140088725A /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		DD2999BF271EAF3900B3B1D7 /* Join07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join07ViewController.swift; sourceTree = "<group>"; };
+		DD2999C2271EB10400B3B1D7 /* YearToDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearToDatePickerView.swift; sourceTree = "<group>"; };
+		DD2999C5271EBB1000B3B1D7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DD2999C7271EBD5D00B3B1D7 /* Reactive+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extension.swift"; sourceTree = "<group>"; };
+		DD2999C9271EC04100B3B1D7 /* Observable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
+		DD2999CC271ECC4500B3B1D7 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		DD2999D0271EDE5B00B3B1D7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DD2999D2271F056D00B3B1D7 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		DD6402CE271AC2370045670F /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		DDB88E402715D0BB006B9A96 /* JoyfulLifeGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyfulLifeGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB88E432715D0BB006B9A96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,9 +93,7 @@
 		DDB88E642715D0C8006B9A96 /* JoyfulLifeGuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulLifeGuardUITests.swift; sourceTree = "<group>"; };
 		DDB88E662715D0C8006B9A96 /* JoyfulLifeGuardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyfulLifeGuardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DDB88E752715DF3A006B9A96 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		DDB88E7A2715DFA6006B9A96 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		DDB88E7C2715EE6A006B9A96 /* CertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertViewController.swift; sourceTree = "<group>"; };
-		DDB88E7E2715EE78006B9A96 /* CertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertViewModel.swift; sourceTree = "<group>"; };
 		DDBCF93E27171A2100A94469 /* Join01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join01ViewController.swift; sourceTree = "<group>"; };
 		DDBCF94027171A3400A94469 /* Join02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join02ViewController.swift; sourceTree = "<group>"; };
 		DDBCF94227171A4300A94469 /* Join03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join03ViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +101,6 @@
 		DDBCF94627171A5B00A94469 /* Join05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join05ViewController.swift; sourceTree = "<group>"; };
 		DDBCF94827171A6900A94469 /* Join06ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join06ViewController.swift; sourceTree = "<group>"; };
 		DDBCF94A27171AAF00A94469 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DDBCF94C27171ED500A94469 /* Join07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join07ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +163,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DD2999C4271EB10E00B3B1D7 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				DDBCF93E27171A2100A94469 /* Join01ViewController.swift */,
+				DDBCF94027171A3400A94469 /* Join02ViewController.swift */,
+				DDBCF94227171A4300A94469 /* Join03ViewController.swift */,
+				DDBCF94427171A4E00A94469 /* Join04ViewController.swift */,
+				DDBCF94627171A5B00A94469 /* Join05ViewController.swift */,
+				DDBCF94827171A6900A94469 /* Join06ViewController.swift */,
+				DD2999BF271EAF3900B3B1D7 /* Join07ViewController.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		DD2999CE271EDE1B00B3B1D7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD2999CC271ECC4500B3B1D7 /* UIButton+Extension.swift */,
+				DD6402CE271AC2370045670F /* UILabel+Extension.swift */,
+				DD2999C5271EBB1000B3B1D7 /* UIColor+Extension.swift */,
+				DD2999C7271EBD5D00B3B1D7 /* Reactive+Extension.swift */,
+				DD2999C9271EC04100B3B1D7 /* Observable+Extension.swift */,
+				DD2999D2271F056D00B3B1D7 /* UserDefaults+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD2999CF271EDE5000B3B1D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD2999D0271EDE5B00B3B1D7 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DDB88E372715D0BB006B9A96 = {
 			isa = PBXGroup;
 			children = (
@@ -182,11 +227,12 @@
 				DDB88E452715D0BB006B9A96 /* SceneDelegate.swift */,
 				DDB88E742715DA1A006B9A96 /* Storyboard */,
 				DDB88E772715DF51006B9A96 /* SignUp */,
+				DD2999C4271EB10E00B3B1D7 /* Join */,
 				DDB88E782715DF6C006B9A96 /* Cert */,
+				DD2999CE271EDE1B00B3B1D7 /* Extension */,
 				DDB88E4C2715D0C7006B9A96 /* Assets.xcassets */,
 				DDB88E512715D0C7006B9A96 /* Info.plist */,
 				DD0C1DC82719CC090088725A /* GoogleService-Info.plist */,
-				DD6402CE271AC2370045670F /* UILabel+Extension.swift */,
 			);
 			path = JoyfulLifeGuard;
 			sourceTree = "<group>";
@@ -222,14 +268,7 @@
 			children = (
 				DDBCF94A27171AAF00A94469 /* LoginViewController.swift */,
 				DDB88E752715DF3A006B9A96 /* SignUpViewController.swift */,
-				DDB88E7A2715DFA6006B9A96 /* SignUpViewModel.swift */,
-				DDBCF93E27171A2100A94469 /* Join01ViewController.swift */,
-				DDBCF94027171A3400A94469 /* Join02ViewController.swift */,
-				DDBCF94227171A4300A94469 /* Join03ViewController.swift */,
-				DDBCF94427171A4E00A94469 /* Join04ViewController.swift */,
-				DDBCF94627171A5B00A94469 /* Join05ViewController.swift */,
-				DDBCF94827171A6900A94469 /* Join06ViewController.swift */,
-				DDBCF94C27171ED500A94469 /* Join07ViewController.swift */,
+				DD2999C2271EB10400B3B1D7 /* YearToDatePickerView.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -237,9 +276,9 @@
 		DDB88E782715DF6C006B9A96 /* Cert */ = {
 			isa = PBXGroup;
 			children = (
+				DD2999CF271EDE5000B3B1D7 /* Model */,
 				DD0C1DCA271A85FD0088725A /* View */,
 				DDB88E7C2715EE6A006B9A96 /* CertViewController.swift */,
-				DDB88E7E2715EE78006B9A96 /* CertViewModel.swift */,
 			);
 			path = Cert;
 			sourceTree = "<group>";
@@ -486,21 +525,26 @@
 			files = (
 				DDBCF94B27171AAF00A94469 /* LoginViewController.swift in Sources */,
 				DDB88E7D2715EE6A006B9A96 /* CertViewController.swift in Sources */,
+				DD2999CA271EC04100B3B1D7 /* Observable+Extension.swift in Sources */,
 				DDBCF94927171A6900A94469 /* Join06ViewController.swift in Sources */,
+				DD2999C6271EBB1000B3B1D7 /* UIColor+Extension.swift in Sources */,
 				DDB88E442715D0BB006B9A96 /* AppDelegate.swift in Sources */,
 				DDBCF94527171A4E00A94469 /* Join04ViewController.swift in Sources */,
 				DDBCF94327171A4300A94469 /* Join03ViewController.swift in Sources */,
-				DDBCF94D27171ED500A94469 /* Join07ViewController.swift in Sources */,
 				DD6402CF271AC2370045670F /* UILabel+Extension.swift in Sources */,
-				DDB88E7B2715DFA6006B9A96 /* SignUpViewModel.swift in Sources */,
+				DD2999C3271EB10400B3B1D7 /* YearToDatePickerView.swift in Sources */,
+				DD2999D1271EDE5B00B3B1D7 /* UserModel.swift in Sources */,
 				DD0C1DCE271A86140088725A /* BackView.swift in Sources */,
 				DDB88E762715DF3A006B9A96 /* SignUpViewController.swift in Sources */,
 				DDBCF93F27171A2100A94469 /* Join01ViewController.swift in Sources */,
+				DD2999D3271F056D00B3B1D7 /* UserDefaults+Extension.swift in Sources */,
+				DD2999C8271EBD5D00B3B1D7 /* Reactive+Extension.swift in Sources */,
 				DDB88E462715D0BB006B9A96 /* SceneDelegate.swift in Sources */,
+				DD2999C0271EAF3900B3B1D7 /* Join07ViewController.swift in Sources */,
 				DDBCF94727171A5B00A94469 /* Join05ViewController.swift in Sources */,
 				DDBCF94127171A3400A94469 /* Join02ViewController.swift in Sources */,
 				DD0C1DCC271A86090088725A /* FrontView.swift in Sources */,
-				DDB88E7F2715EE78006B9A96 /* CertViewModel.swift in Sources */,
+				DD2999CD271ECC4500B3B1D7 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,7 +724,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3UGB7ZX43H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JoyfulLifeGuard/Info.plist;
@@ -716,7 +760,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3UGB7ZX43H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JoyfulLifeGuard/Info.plist;
