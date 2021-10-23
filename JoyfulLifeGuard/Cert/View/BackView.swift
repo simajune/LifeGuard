@@ -54,7 +54,7 @@ extension BackView {
         self.layer.cornerRadius = 10
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowRadius = 4
-        self.layer.shadowOffset = CGSize(width: 10, height: 12.0)
+        self.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
         self.layer.shadowOpacity = 0.5
         
         self.flipButton.addTarget(self, action: #selector(flipButtonClicked(_:)), for: .touchUpInside)
