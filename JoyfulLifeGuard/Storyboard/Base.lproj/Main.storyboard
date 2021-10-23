@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6Ie-J5-y96">
-                                <rect key="frame" x="95" y="258.33333333333331" width="200" height="243"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="aIq-gd-bD4"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l7-ET-LI7">
                                 <rect key="frame" x="25" y="735" width="340" height="50"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.33333333333333331" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,11 +25,17 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="라이프가드 신청하기"/>
+                                <state key="normal" title="자격증 발급받기"/>
                                 <connections>
                                     <action selector="clickedSignupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHB-tg-Z7f"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6Ie-J5-y96">
+                                <rect key="frame" x="51" y="228.33333333333337" width="288" height="303"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="aIq-gd-bD4"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,13 +186,13 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="알기 원해요!"/>
+                                <state key="normal" title="알기 원해요"/>
                                 <connections>
                                     <action selector="clickedOkButton:" destination="fSQ-Hs-vGb" eventType="touchUpInside" id="dwi-cZ-Gfm"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Join01" translatesAutoresizingMaskIntoConstraints="NO" id="hVp-f5-z6k">
-                                <rect key="frame" x="14" y="230.33333333333337" width="362" height="257"/>
+                                <rect key="frame" x="16" y="237.66666666666663" width="358" height="242"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingers" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-le-hwy">
                                 <rect key="frame" x="170" y="601" width="50" height="64"/>
@@ -238,7 +238,7 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="18"/>
                                 <color key="tintColor" red="0.94901960780000005" green="0.33333333329999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="지상대명령">
+                                <state key="normal" title="지상대명령은 무엇인가?">
                                     <color key="titleColor" red="0.94901960780000005" green="0.33333333329999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -246,7 +246,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Join02" translatesAutoresizingMaskIntoConstraints="NO" id="oXT-IC-o0d">
-                                <rect key="frame" x="19" y="212.66666666666663" width="352" height="292"/>
+                                <rect key="frame" x="50" y="176.33333333333337" width="290" height="365"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingers" translatesAutoresizingMaskIntoConstraints="NO" id="0ad-df-sMW">
                                 <rect key="frame" x="170" y="601" width="50" height="64"/>
@@ -300,15 +300,20 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Join03" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-eL-m09">
-                                <rect key="frame" x="15" y="211.33333333333337" width="360" height="337"/>
+                                <rect key="frame" x="20" y="198.66666666666663" width="350" height="362"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingers" translatesAutoresizingMaskIntoConstraints="NO" id="Us7-rf-UI6">
+                                <rect key="frame" x="170" y="601" width="50" height="64"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GdC-0B-6Ts"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ffw-eL-m09" firstAttribute="centerY" secondItem="62K-Gw-Sks" secondAttribute="centerY" multiplier="0.9" id="9dk-ZJ-dlO"/>
+                            <constraint firstItem="Us7-rf-UI6" firstAttribute="centerY" secondItem="62K-Gw-Sks" secondAttribute="centerY" multiplier="1.5" id="9so-kv-Tsg"/>
                             <constraint firstItem="GdC-0B-6Ts" firstAttribute="bottom" secondItem="RO3-6b-k1v" secondAttribute="bottom" constant="25" id="ApY-uj-EYY"/>
                             <constraint firstItem="RO3-6b-k1v" firstAttribute="leading" secondItem="GdC-0B-6Ts" secondAttribute="leading" constant="25" id="Lfa-Qp-0SX"/>
+                            <constraint firstItem="Us7-rf-UI6" firstAttribute="centerX" secondItem="62K-Gw-Sks" secondAttribute="centerX" id="S9T-MT-wWI"/>
                             <constraint firstItem="ffw-eL-m09" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="62K-Gw-Sks" secondAttribute="leading" id="X9l-9c-URL"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ffw-eL-m09" secondAttribute="trailing" id="dNb-bQ-HDv"/>
                             <constraint firstItem="ffw-eL-m09" firstAttribute="centerX" secondItem="62K-Gw-Sks" secondAttribute="centerX" id="wid-is-t88"/>
@@ -350,7 +355,7 @@
                                 <rect key="frame" x="170" y="601" width="50" height="64"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Join04" translatesAutoresizingMaskIntoConstraints="NO" id="oSm-wh-JI4">
-                                <rect key="frame" x="24" y="212.66666666666663" width="342" height="292"/>
+                                <rect key="frame" x="29" y="212.66666666666663" width="332" height="292"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="757-5X-JeB"/>
@@ -399,7 +404,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Join05" translatesAutoresizingMaskIntoConstraints="NO" id="VdJ-hc-X07">
-                                <rect key="frame" x="69.666666666666686" y="258.33333333333331" width="251" height="243"/>
+                                <rect key="frame" x="29.666666666666657" y="258.66666666666669" width="331" height="242"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vmR-af-P4g"/>
@@ -440,7 +445,7 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="18"/>
                                 <color key="tintColor" red="0.94901960780000005" green="0.33333333329999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="네!">
+                                <state key="normal" title="YES">
                                     <color key="titleColor" red="0.94901960780000005" green="0.33333333329999998" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -495,7 +500,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Join07" translatesAutoresizingMaskIntoConstraints="NO" id="ZUA-aH-kev">
-                                <rect key="frame" x="35.666666666666657" y="233.33333333333337" width="319" height="293"/>
+                                <rect key="frame" x="28.666666666666657" y="198.66666666666663" width="333" height="362"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sXe-qr-ZKd"/>
@@ -521,16 +526,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Join01" width="362" height="257"/>
-        <image name="Join02" width="352" height="292"/>
-        <image name="Join03" width="360" height="337"/>
-        <image name="Join04" width="342" height="292"/>
-        <image name="Join05" width="251" height="243"/>
+        <image name="Join01" width="358" height="242"/>
+        <image name="Join02" width="290" height="365"/>
+        <image name="Join03" width="350" height="362"/>
+        <image name="Join04" width="332" height="292"/>
+        <image name="Join05" width="331" height="242"/>
         <image name="Join06" width="347" height="304"/>
-        <image name="Join07" width="319" height="293"/>
+        <image name="Join07" width="333" height="362"/>
         <image name="fingers" width="50" height="64"/>
         <image name="lifeguard_tube" width="242" height="242"/>
-        <image name="mainLogo" width="196" height="243"/>
+        <image name="mainLogo" width="284" height="303"/>
         <image name="profile" width="180" height="200"/>
     </resources>
 </document>

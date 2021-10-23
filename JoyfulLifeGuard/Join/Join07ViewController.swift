@@ -36,6 +36,7 @@ class Join07ViewController: UIViewController {
         guard let certVC = mainStoryboard.instantiateViewController(withIdentifier: "CertViewController") as? CertViewController,
               let user = self.user else { return }
         saveUserData(user: user)
-        self.navigationController?.pushViewController(certVC, animated: true)
+        certVC.modalPresentationStyle = .fullScreen
+        self.present(certVC, animated: true, completion: nil)
     }
 }

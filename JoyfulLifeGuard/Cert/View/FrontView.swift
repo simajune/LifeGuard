@@ -18,6 +18,7 @@ class FrontView: UIView {
     
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.layer.cornerRadius = 4.0
         imageView.contentMode = .scaleAspectFill
         self.addSubview(imageView)
         return imageView
@@ -25,7 +26,7 @@ class FrontView: UIView {
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 17.0, weight: .regular)
         label.textColor = .white
         self.addSubview(label)
         return label
@@ -33,7 +34,7 @@ class FrontView: UIView {
     
     private lazy var birthLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 17.0, weight: .regular)
         label.textColor = .white
         self.addSubview(label)
         return label
@@ -41,7 +42,7 @@ class FrontView: UIView {
     
     private lazy var validateDate: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 17.0, weight: .regular)
         label.textColor = .white
         self.addSubview(label)
         return label
@@ -49,8 +50,8 @@ class FrontView: UIView {
     
     private lazy var regiserDateLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 13.0, weight: .regular)
-        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 14.0, weight: .semibold)
+        label.textColor = .white
         self.addSubview(label)
         return label
     }()
@@ -92,22 +93,22 @@ extension FrontView {
         }
         
         self.nameLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(267)
-            $0.leading.equalToSuperview().offset(120)
+            $0.top.equalToSuperview().offset(257)
+            $0.leading.equalToSuperview().offset(132)
         }
         
         self.birthLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(298)
-            $0.leading.equalToSuperview().offset(120)
+            $0.top.equalToSuperview().offset(292)
+            $0.leading.equalToSuperview().offset(132)
         }
         
         self.validateDate.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(330)
-            $0.leading.equalToSuperview().offset(120)
+            $0.top.equalToSuperview().offset(328)
+            $0.leading.equalToSuperview().offset(132)
         }
         
         self.regiserDateLabel.snp.makeConstraints {
-            $0.bottom.equalToSuperview().offset(-40)
+            $0.bottom.equalToSuperview().offset(-30)
             $0.centerX.equalToSuperview()
         }
         

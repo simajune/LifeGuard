@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Join04.png",
+      "filename" : "Join05.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Join04@2x.png",
+      "filename" : "Join05@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Join04@3x.png",
+      "filename" : "Join05@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -149,7 +149,7 @@ final class SignUpViewController: UIViewController {
                       let profileImage = self.profileImageView.image?.pngData(),
                       let name = self.nameTextField.text,
                       let birthDay = self.birthTextField.text else { return }
-                let user = UserModel(profile: profileImage, name: name, birthDay: birthDay, regiserDay: self.getCurrentDate())
+                let user = UserModel(profile: profileImage, name: name, birthDay: birthDay, regiserDay: "2021년 10월 24일")
                 let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
                 guard let join01VC = mainStoryboard.instantiateViewController(withIdentifier: "Join01ViewController") as? Join01ViewController else { return }
                 join01VC.configure(user: user)
@@ -204,12 +204,6 @@ final class SignUpViewController: UIViewController {
     
     @objc private func dismissKeyboard() {
         view.endEditing(true)
-    }
-    
-    private func getCurrentDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy년 MM월 dd일"
-        return dateFormatter.string(from: Date())
     }
 }
 
